@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <title>Code Player</title>
+    </head>
+    <body>
+
+        <!-- Top Navbar -->
+        <div id="top-nav" class="container">
+
+            <img id="nav-icon" src="Images/navIcon.PNG" />
+            <h2 id="webpage-title">Code Player</h2>
+            <button id="html-link" class="nav-link active" data-id="html">HTML</button>
+            <button class="nav-link" data-id="css">CSS</>
+            <button class="nav-link" data-id="javascript">Javascript</button>
+            <button id="output-link" class="nav-link active" data-id="output">Output</>
+
+        </div>
+
+        <div class="clear"></div>
+
+        <!-- Body Container -->
+        <div id="body-container">
+
+            <textarea id="html-panel" class="panel" data-id="html">&#60;h2 id="element1"&#62;Hello World!&#60;/h2&#62;</textarea>
+            <textarea id="css-panel" class="panel" data-id="css">#element1 {
+    color: green;
+    font-size: 5rem;
+    text-align: center;
+}</textarea>
+            <textarea id="javascript-panel" class="panel" data-id="javascript">window.onclick = function() {
+    alert("Hello");
+};</textarea>
+            <iframe id="output-panel" class="panel" data-id="output"></iframe>
+
+        </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
